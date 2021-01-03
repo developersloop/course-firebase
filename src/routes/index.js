@@ -6,5 +6,6 @@ export const router =  new VueRouter({
     mode: 'history',
     routes: [
         { name: 'home', path: '/home', component: () => import('../components/pages/Home.vue') },
+        { path: '/', redirect: '/home'}
     ]
 })
